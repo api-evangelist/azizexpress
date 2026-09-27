@@ -1,23 +1,51 @@
 aid: azizexpress
+
 name: Azizexpress
-description: 'Azizexpress is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Azizexpress is a delivery service company that provides parcel and order delivery from national and foreign online stores. Listed on EquityZen, it operates in software, AI, data and analytics sectors, founded in 2020. The company offers investment opportunities via pre‑IPO shares and provides detailed financial, valuation, and management information to accredited investors.'
+
 url: https://raw.githubusercontent.com/api-evangelist/azizexpress/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Delivery
+- Logistics
+- Software
+- AI
+- DataAnalytics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/azizexpress-hosts.yml
+- type: Vendors
+  url: vendors/azizexpress-vendors.yml
+- type: DomainSecurity
+  url: security/azizexpress-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/azizexpress
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
